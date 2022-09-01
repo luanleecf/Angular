@@ -5,9 +5,8 @@ import { NewComponentComponent } from './new-component/new-component.component';
 
 
 @NgModule({
-  declarations: [
-    NewComponentComponent
-  ],
+  declarations: [NewComponentComponent],
+  exports: [NewComponentComponent],
   imports: [
     CommonModule
   ]
