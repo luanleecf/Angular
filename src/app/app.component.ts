@@ -11,12 +11,15 @@ import { Component, OnInit } from '@angular/core';
   <!-- <app-input [contador]="addValue"></app-input>
   <br>
   <button (click)="add()">Adiciona</button> -->
-  <ng-template [ngIf]="getDados">
+  <!-- <ng-template [ngIf]="getDados">
     <h1>{{getDados.nome}}</h1>
     <h2>{{getDados.idade}}</h2>
   </ng-template>
 
-  <app-output (enviarDados)="setDados($event)"></app-output>
+  <app-output (enviarDados)="setDados($event)"></app-output> -->
+
+  <app-food-list></app-food-list>
+  <app-food-add></app-food-add>
   <router-outlet></router-outlet>`,
 })
 export class AppComponent implements OnInit {
